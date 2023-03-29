@@ -1,0 +1,18 @@
+version: 0.10.2
+data_loading: TRUE
+data_loading_header: TRUE
+data_ignore:
+cache_loading: FALSE
+recursive_loading: FALSE
+munging: TRUE
+logging: TRUE
+logging_level: WARN
+load_libraries: TRUE
+libraries: knitr, surveillance, hhh4contacts, ggplot2, patchwork, viridis, ggthemes, kableExtra, openxlsx, reshape2, maptools, sp, spdep, sf, tmap, tmaptools, wrapr, zoo, ggforce, hhh4addon, MASS
+as_factors: FALSE
+tables_type: data_frame
+attach_internal_libraries: FALSE
+cache_loaded_data: FALSE
+sticky_variables: NONE
+underscore_variables: TRUE
+cache_file_format: RData
