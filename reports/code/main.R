@@ -159,7 +159,8 @@ theme(plot.margin = margin(t = 0.1, l = 0, b = 0, r = 0, unit = "cm"))
 par(las = 1)
 plot(waning(0 : 55, val = 1),
      type = "b", xlab = "p (weeks passed since vaccine given)",
-     main = "Waning", ylab = expression(u(p)), xaxt = "n")
+     ylab = expression(u(p)), xaxt = "n",
+     pch = 19, cex = 0.9)
 axis(1, at = seq(0, 55, 5), labels = seq(0, 55, 5))
 
 
@@ -363,14 +364,14 @@ rownames(res_table) <- gsub("end.ri\\(iid\\)", "$\\\\alpha^{\\\\nu}_{\\\\text{re
 rownames(res_table) <- gsub("ne.ri\\(iid\\)", "$\\\\alpha^{\\\\phi}_{\\\\text{region}}$",
                             rownames(res_table))
 
-rownames(res_table) <- gsub("end.sin\\(2 \\* pi \\* t/52\\)", "$\\\\gamma^{\\\\nu}_{\\\\sin(2\\\\pi t/52)}$",
+rownames(res_table) <- gsub("end.sin\\(2 \\* pi \\* t/52\\)", "$\\\\gamma^{\\\\nu}_{\\\\sin}$",
                             rownames(res_table))
-rownames(res_table) <- gsub("end.cos\\(2 \\* pi \\* t/52\\)", "$\\\\gamma^{\\\\nu}_{\\\\cos(2\\\\pi t/52)}$",
+rownames(res_table) <- gsub("end.cos\\(2 \\* pi \\* t/52\\)", "$\\\\gamma^{\\\\nu}_{\\\\cos}$",
                             rownames(res_table))
 
-rownames(res_table) <- gsub("ne.sin\\(2 \\* pi \\* t/52\\)", "$\\\\gamma^{\\\\phi}_{\\\\sin(2\\\\pi t/52)}$",
+rownames(res_table) <- gsub("ne.sin\\(2 \\* pi \\* t/52\\)", "$\\\\gamma^{\\\\phi}_{\\\\sin}$",
                             rownames(res_table))
-rownames(res_table) <- gsub("ne.cos\\(2 \\* pi \\* t/52\\)", "$\\\\gamma^{\\\\phi}_{\\\\cos(2\\\\pi t/52)}$",
+rownames(res_table) <- gsub("ne.cos\\(2 \\* pi \\* t/52\\)", "$\\\\gamma^{\\\\phi}_{\\\\cos}$",
                             rownames(res_table))
 
 kbl <- column_spec(
