@@ -1,6 +1,6 @@
 # ee-vax
 
-This repository contains the code for the analysis presented in *The COVID-19 vaccination campaign in Switzerland and its impact on disease spread*
+This repository contains the code for the analysis presented in [*The COVID-19 vaccination campaign in Switzerland and its impact on disease spread*](https://doi.org/10.1101/2023.04.06.23288251 )
 
 ### Ensuring you have the raw data
 
