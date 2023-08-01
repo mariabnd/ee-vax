@@ -8,8 +8,31 @@ Please first run the script `download-data-sets.R` such that the correct data is
 
 ### Conducting the pre-processing of data
 
-Provided you do not wish to use `ProjectTemplate::load.project()`, you should execute in order the following scripts before running the code
-
+Provided you do not wish to use `ProjectTemplate::load.project()`, you should first load the packages listed in config/global.dcf
+```
+library(knitr)
+library(surveillance)
+library(hhh4contacts)
+library(ggplot2)
+library(patchwork)
+library(viridis)
+library(ggthemes)
+library(kableExtra)
+library(openxlsx)
+library(reshape2)
+library(maptools)
+library(sp)
+library(spdep)
+library(sf)
+library(tmap)
+library(tmaptools)
+library(wrapr)
+library(zoo)
+library(ggforce)
+library(hhh4addon)
+library(MASS)
+```
+and then execute in order the following scripts before running the code
 ```
 source("lib/globals.R")
 source("lib/function-AIC-correction.R")
